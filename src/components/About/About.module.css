@@ -1,0 +1,157 @@
+.about {
+    padding: 64px 16px 0px;
+}
+
+.aboutWrapper {
+    margin: 0 auto;
+    width: 288px;
+}
+
+.aboutTitle {
+    font-family: 'Montserrat Alternates',
+        sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.aboutText {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.35px;
+}
+
+.aboutFirstBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutFirstBlockText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutFirstImage {
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.aboutSecondBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutSecondBlockText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutSecondImage {
+    display: block;
+    margin: 24px auto;
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.aboutButton {
+    text-decoration: none;
+    display: flex;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding: 80px 40px 0px 40px;
+    }
+
+    .aboutWrapper {
+        width: 688px;
+    }
+
+    .aboutTitle {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0.35px;
+        margin-bottom: 40px;
+    }
+
+    .aboutText {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .aboutFirstBlockText {
+        order: 1;
+    }
+
+    .aboutFirstImage {
+        order: 2;
+        margin: 16px auto;
+    }
+
+    .aboutSecondBlockText {
+        order: 1;
+    }
+
+    .aboutSecondImage {
+        order: 2;
+        margin: 16px auto 0;
+    }
+
+    .aboutButton {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about {
+        padding: 100px 80px 0px 80px;
+    }
+
+    .aboutWrapper {
+        display: flex;
+        max-height: 767px;
+        justify-content: space-between;
+        width: 1120px;
+    }
+
+    .aboutTitle {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
+
+    .aboutFirstBlock {
+        width: 550px;
+    }
+
+    .aboutFirstImage {
+        width: 550px;
+        height: 403px;
+        margin: 24px 0 0 0;
+    }
+
+    .aboutSecondBlock {
+        width: 550px;
+    }
+
+    .aboutSecondImage {
+        margin: auto 0 0 0;
+    }
+
+    .aboutButton {
+        margin-top: 100px;
+    }
+}
