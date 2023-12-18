@@ -1,13 +1,10 @@
-const apiKey =  process.env.VITE_APP_MONO_API_KEY;
-const apiUrl = process.env.VITE_APP_MONO_API_URL;
-
 export const fetchAccountBalance = async () => {
-    const response = await fetch(apiUrl, {
-        method: 'GET',
-        headers: {
-            'X-Token': apiKey,
-        },
-    });
+    const response = await fetch(import.meta.env.VITE_API_URL, {
+			method: 'GET',
+			headers: {
+				'X-Token': import.meta.env.VITE_API_KEY,
+			},
+		});
 
     if (!response.ok) {
         throw new Error('Network response was not ok');
